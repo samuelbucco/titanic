@@ -102,6 +102,17 @@ Este projeto demonstra como ferramentas de análise de dados podem ser utilizada
 
 ---
 
+## Como executar
+
+1. Criar ambiente virtual
+2. Instalar dependências
+
+pip install -r requirements.txt
+
+3. Executar o script
+
+python index/AED_titanic.py
+
 ## 👨‍💻 Autor
 
 Samuel Bucco
