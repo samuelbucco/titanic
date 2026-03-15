@@ -1,12 +1,5 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-
-df = pd.read_csv('data/titanic_dataset.csv')
-
-print("Arquivo carregado com sucesso!")
-print(df.head())
-print(df.info())
-print(df.describe())
+ue='Survived', data=df)
+plt.xlabel('Classe Social')
+plt.ylabel('Contagem')
+plt.title('Sobrevivência por Classe')
+plt.show()
