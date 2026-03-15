@@ -33,22 +33,22 @@ print("\nSobrevivência:")
 print(df["Survived"].value_counts())
 
 # gráfico de barras para sobrevivência
-# sns.countplot(x='Survived', data=df)
-# plt.xlabel('Sobrevivência (0 = Não, 1 = Sim)')
-# plt.ylabel('Contagem')
-# plt.title('Distribuição de Sobreviventes')
-# plt.show()
+sns.countplot(x='Survived', data=df)
+plt.xlabel('Sobrevivência (0 = Não, 1 = Sim)')
+plt.ylabel('Contagem')
+plt.title('Distribuição de Sobreviventes')
+plt.show()
 
 # visualizando a distribuição de sobreviventes por sexo
 print("\nSobrevivência por sexo:")
 print(df.groupby("Sex")["Survived"].value_counts())
 
 # gráfico de barras para sobrevivência por sexo
-# sns.countplot(x='Sex', data=df)
-# plt.xlabel('Sexo')
-# plt.ylabel('Contagem')
-# plt.title('Sobrevivência por Sexo')
-# plt.show()
+sns.countplot(x='Sex', data=df)
+plt.xlabel('Sexo')
+plt.ylabel('Contagem')
+plt.title('Sobrevivência por Sexo')
+plt.show()
 
 # ===========================================================
 # INSIGHTS:
@@ -61,11 +61,11 @@ print("\nSobrevivência por classe:")
 print(df.groupby("Pclass")["Survived"].value_counts())
 
 # gráfico de barras para sobrevivência por classe
-# sns.countplot(x='Pclass', hue='Survived', data=df)
-# plt.xlabel('Classe Social')
-# plt.ylabel('Contagem')
-# plt.title('Sobrevivência por Classe')
-# plt.show()
+sns.countplot(x='Pclass', hue='Survived', data=df)
+plt.xlabel('Classe Social')
+plt.ylabel('Contagem')
+plt.title('Sobrevivência por Classe')
+plt.show()
 
 # ===========================================================
 # INSIGHTS:
@@ -79,11 +79,11 @@ df["Age_int"] = df["Age"].round()
 print(df.groupby("Age_int")["Survived"].value_counts())
 
 # gráfico de barras para sobrevivência por idade
-# sns.histplot(df["Age_int"], bins=30, multiple="stack")
-# plt.title('Sobrevivência por Idade')
-# plt.xlabel('Idade')
-# plt.ylabel('Contagem')
-# plt.show()
+sns.histplot(df["Age_int"], bins=30, multiple="stack")
+plt.title('Sobrevivência por Idade')
+plt.xlabel('Idade')
+plt.ylabel('Contagem')
+plt.show()
 
 # visualizando a distribuição por faixa etária
 bins = [0, 12, 18, 35, 60, 100]
@@ -93,11 +93,11 @@ print("\nSobrevivência por faixa etária:")
 print(df.groupby("Age_group")["Survived"].value_counts())
 
 # gráfico de barras para sobrevivência por faixa etária
-# sns.countplot(x='Age_group', data=df)
-# plt.title('Sobrevivência por Faixa Etária')
-# plt.xlabel('Faixa Etária')
-# plt.ylabel('Contagem')
-# plt.show()
+sns.countplot(x='Age_group', data=df)
+plt.title('Sobrevivência por Faixa Etária')
+plt.xlabel('Faixa Etária')
+plt.ylabel('Contagem')
+plt.show()
 
 # ===========================================================
 # INSIGHTS:
