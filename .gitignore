@@ -1,0 +1,22 @@
+# ambiente virtual
+.venv/
+venv/
+
+# cache python
+__pycache__/
+*.pyc
+*.pyo
+
+# arquivos do sistema
+.DS_Store
+
+# jupyter
+.ipynb_checkpoints/
+
+# arquivos de ambiente
+.env
+
+# logs
+*.log
+
+# arquivos grandes de dados (opcional)
