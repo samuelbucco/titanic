@@ -1,3 +1,9 @@
+## Repositório
+
+Este projeto também está disponível no GitHub para fins de versionamento e consulta:
+
+https://github.com/samuelbucco/titanic
+
 # 🚢 Análise Exploratória de Dados – Titanic
 
 ## 📊 Descrição do Projeto
